@@ -1,3 +1,4 @@
+entryPoint: "core"
 version: "0.5.0"
 remoteDependencies: [
   "http://strd6.github.io/require/v0.2.2.js"

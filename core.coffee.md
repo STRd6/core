@@ -1,3 +1,5 @@
+Core
+====
 
 The Core module is used to add extended functionality to objects without
 extending `Object.prototype` directly.
