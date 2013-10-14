@@ -18,18 +18,12 @@
               <div class="pilwrap">
                 <a class="pilcrow" href="#section-1">&#182;</a>
               </div>
-              <h3 id="-">*</h3>
-<p>The Core class is used to add extended functionality to objects without
-extending the object class directly. Inherit from Core to gain its utility
-methods.</p>
-<p>@name Core
-@constructor</p>
-<p>@param {Object} I Instance variables</p>
-<h2 id="-">#</h2>
+              <p>The Core module is used to add extended functionality to objects without
+extending <code>Object.prototype</code> directly.</p>
 
             </div>
-            <div class="content"><pre><code class="lang-coffeescript"><span class="function"><span class="title">Core</span></span> = (I={}) -&gt;
-  self =</code></pre>
+            <div class="content"><pre><code class="lang-coffeescript"><span class="function"><span class="title">Core</span></span> = (I={}, self={}) -&gt;
+  extend self,</code></pre>
 </div>
         </li>
         
