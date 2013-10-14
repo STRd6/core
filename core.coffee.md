@@ -1,16 +1,9 @@
-###*
-The Core class is used to add extended functionality to objects without
-extending the object class directly. Inherit from Core to gain its utility
-methods.
 
-@name Core
-@constructor
+The Core module is used to add extended functionality to objects without
+extending `Object.prototype` directly.
 
-@param {Object} I Instance variables
-###
-
-    Core = (I={}) ->
-      self =
+    Core = (I={}, self={}) ->
+      extend self,
 
 External access to instance variables. Use of this property should be avoided
 in general, but can come in handy from time to time.
