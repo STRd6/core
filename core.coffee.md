@@ -39,13 +39,13 @@ Generates a public jQuery style getter / setter method for each `String` argumen
             self[attrName] = (newValue) ->
               if arguments.length > 0
                 I[attrName] = newValue
-  
+
                 return self
               else
                 I[attrName]
 
           return self
-  
+
 Generates a public jQuery style getter method for each String argument.
 
 >     #! example
@@ -63,10 +63,10 @@ Generates a public jQuery style getter method for each String argument.
             self[attrName] = ->
               I[attrName]
 
-          return self  
+          return self
 
 Extends this object with methods from the passed in object. A shortcut for Object.extend(self, methods)
-  
+
 >     I =
 >       x: 30
 >       y: 40
@@ -80,8 +80,8 @@ Extends this object with methods from the passed in object. A shortcut for Objec
 >
 >     player.increaseSpeed()
 
-        extend: (object) ->
-          extend self, object
+        extend: (objects...) ->
+          extend self, objects...
 
 Includes a module in this object. A module is a constructor that takes two parameters, `I` and `self`
 
@@ -95,9 +95,9 @@ Includes a module in this object. A module is a constructor that takes two param
         include: (modules...) ->
           for Module in modules
             Module(I, self)
-  
+
           return self
-  
+
       return self
 
 Helpers
